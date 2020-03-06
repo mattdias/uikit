@@ -1,0 +1,140 @@
+---
+layout: page
+title: search
+---
+<script src="/app/libs/modal-popover/modal-popover.js"></script>
+
+        <div class="row">
+            <div class="col-sm-3"> <h2 class="font-weight-light">Search</h2> </div>
+            <div class="col-sm-9" style="margin-top:34px;">     
+                <div class="pull-right">
+                    <ul class="nav nav-pills nav-search-options nav-stacked-compressed">
+                        <li> <a class="small font-weight-light text-uppercase" template="#view-options" data-container="body" data-toggle="popover" data-placement="bottom" html="true" data-original-title="" title="Search results view options">view</a> </li>
+                        <li> <a class="small font-weight-light text-uppercase" template="#sort-options" data-container="body" data-toggle="popover" data-placement="bottom" html="true" data-original-title="" title="Sort search results">sort</a></li>
+                        <li><a class="small font-weight-light text-uppercase" template="#email-options" data-container="body" data-toggle="popover" data-placement="bottom" html="true" data-original-title="" title="Send search results">send</a></li>
+                        <li> <a class="small font-weight-light text-uppercase">print</a> </li>
+                        <li> <a class="small font-weight-light text-uppercase">export</a> </li>
+                        <li> <a class="small font-weight-light text-uppercase">help</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-4 col-lg-4" > 
+                <span class="text-muted small font-weight-light text-uppercase">filters</span> 
+                <ul class="nav nav-searchfilters flex-column">
+                  <li class="nav-item">
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-search btn-default" type="button"><i class="text-muted glyphicon glyphicon-search"></i></button>
+                          </span>
+                        </div>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-9 col-md-8 col-lg-8">
+
+              <div style="margin-top:5px;">
+                <span class="text-muted small font-weight-light text-uppercase" >records</span> 
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="margin-top:5px;">
+                  <li role="presentation" class="active"><a href="#all" aria-controls="home" role="tab" data-toggle="tab">All records (399)</a></li>
+                  <li role="presentation"><a href="#national" aria-controls="profile" role="tab" data-toggle="tab">National records (100)</a></li>
+                  <li role="presentation"><a href="#reference" aria-controls="messages" role="tab" data-toggle="tab">Reference records (35)</a></li>
+                  <li role="presentation"><a href="#scbd" aria-controls="settings" role="tab" data-toggle="tab">SCBD records (2)</a></li>
+                </ul>
+              
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="all">
+
+                    <nav aria-label="Page navigation" class="text-center">
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                  </nav>   
+
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;"></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+                    <div class="temp" style="height: 80px; width: 100%; margin-bottom: 15px;" ></div>
+
+                    <nav aria-label="Page navigation" class="text-center">
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                  </nav>   
+
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="national">...</div>
+                  <div role="tabpanel" class="tab-pane" id="reference">...</div>
+                  <div role="tabpanel" class="tab-pane" id="scbd">...</div>
+                </div>
+              
+              </div>
+
+            </div>
+          </div><!-- end row -->
+
+<script>
+popoverOptions = {
+        content: function () {
+            // Get the content from the hidden sibling.
+             var id = $(this).attr('template')
+             return $(id).html();
+        },
+        style: "max-width:300px;",
+        html: true
+  };
+
+  $('[data-toggle="popover"],[data-original-title]').popover(popoverOptions);
+
+$(document).on('click', function(e) {
+  $('[data-toggle="popover"],[data-original-title]').each(function() {
+    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+      $(this).popover('hide').data('bs.popover').inState.click = false // fix for BS 3.3.6
+    }
+
+  });
+});
+</script>
+
+
