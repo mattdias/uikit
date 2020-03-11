@@ -1,0 +1,28 @@
+<a type="button" template="#CNA-filters" class="hidden-xs btn btn-filter1 btn-md btn-default" data-container="body"
+    data-toggle="modal-popover" data-placement="right" html="true" data-original-title=""
+    title="Competent National Authorities">
+    <i class="pull-left align glyphicon glyphicon-remove" style="padding-right:10px;"></i>
+    <span style="white-space: normal;">Competent National Authorities</span>
+    <i class="pull-right align glyphicon glyphicon-menu-right"></i>
+
+</a>
+
+<a type="button" template="#CNA-filters" class="hide visible-xs btn btn-filter1 btn-md btn-default"
+    data-container="body" data-toggle="modal-popover" data-placement="bottom" html="true" data-original-title=""
+    title="Competent National Authorities">
+    <i class="pull-left align glyphicon glyphicon-remove" style="padding-right:10px;"></i>
+    Competent National Authorities <i class="pull-right align glyphicon glyphicon-menu-right"></i>
+</a>
+
+    <div class="hide popover-content" id="CNA-filters">
+        {% include /search-filters/cna-filters.html %}
+       
+
+        <div class="popover-footer">
+            <div style="height: 35px;">
+            <a class="btn btn-primary pull-left"> Apply </a>
+            <a class="btn btn-default pull-right"> Cancel </a>
+            </div>
+        </div>
+
+    </div>

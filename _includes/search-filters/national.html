@@ -1,0 +1,37 @@
+<a type="button" template="#filter-options" class="hidden-xs btn btn-filter2 btn-md btn-default" data-container="body"
+    data-toggle="popover" data-placement="right" html="true" data-original-title="" title="Filter options">
+    <i class="pull-left align glyphicon glyphicon-remove" style="padding-right:10px;"></i>
+    <span style="white-space: normal;">National</span>
+    <i class="pull-right align glyphicon glyphicon-menu-right"></i>
+</a>
+
+<a type="button" template="#filter-options" class="hide visible-xs btn btn-filter2 btn-md btn-default"
+    data-container="body" data-toggle="popover" data-placement="bottom" html="true" data-original-title=""
+    title="Filter options">
+    <i class="pull-left align glyphicon glyphicon-remove" style="padding-right:10px;"></i> National <i
+        class="pull-right align glyphicon glyphicon-menu-right"></i>
+</a>
+
+<div class="hide popover-content popover-sm" id="filter-options">
+    <ul class="nav nav-pills nav-stacked">
+
+        <li>
+            <div class="dropdown mb10">
+                <div class="small text-uppercase">Jurisdiction</div>
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                    National
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">National</a></li>
+                    <li><a href="#">Sub-national</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"> <i class="align glyphicon glyphicon-minus-sign"></i> Exclude results</a></li>
+        <li><a href="#"> <i class="align glyphicon glyphicon-ban-circle"></i> Disable</a></li>
+        <li><a href="#"> <i class="align glyphicon glyphicon-remove"></i> Remove</a></li>
+    </ul>
+</div>
