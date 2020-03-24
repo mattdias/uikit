@@ -3,6 +3,9 @@
 /* Custom container *//* bootstrap 3 changes */
 .btn {background-image: none;}
 .panel-heading, .well{background-color: #f7f7f7!important; background-image: none!important;}
+.carousel-control.right, .carousel-control.left {background: none;color:#111}
+
+
 
 /* bootstap 4 */
 .text-muted {color: #6c757d!important;}
