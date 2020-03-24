@@ -1,0 +1,454 @@
+---
+layout: page
+title: countries overview
+---
+<div class="container-full content-full-1 mb20">
+    <div class="container">
+        <div class="jumbotron bg-white">
+            <h1>National records overview</h1>
+            <div class="dropdown" style="display: inline;">
+                <button class="btn btn-lg btn-default color-national dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 Country Profiles
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown" style="display: inline;">
+                <button class="btn btn-lg btn-default color-national " type="button" data-toggle="dropdown">
+                 View Map
+                </button>
+              </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3" >
+            <h3>Matrix / Pivot </h3>
+        </div>
+        <div class="col-xs-9" style="margin-top:34px;">     
+            <div class="pull-right" style="position: relative;top:-32px;">
+                <ul class="nav nav-pills nav-search-options nav-stacked-compressed">
+                    <li><a class="small font-weight-light text-uppercase" template="#email-options" data-container="body" data-toggle="modal-popover" data-placement="bottom" html="true" data-original-title="" title="Send search results">send</a>
+                      {% include /search-options/send.html %}
+                    </li>
+                    <li> <a class="small font-weight-light text-uppercase">print</a> </li>
+                    <li> <a class="small font-weight-light text-uppercase">export</a> </li>
+                    <li> <a class="small font-weight-light text-uppercase">help</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid mb50">
+
+    <!-- PIVOT ROW -->
+    <div class="row mb20">
+        <div class="col-lg-3" style="padding:10px; vertical-align: middle;">
+
+
+        </div>
+        <div class="col-lg-9 bg-grey" style="padding:10px;">
+            
+            <div style="width: 350px;">
+                <span class="text-muted small font-weight-light text-uppercase">X-AXIS:</span>   
+                <div class="dropdown" style="display: inline;position: relative;top:-3px;">
+                    <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select x-axis
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="about">Record types</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="about-cna">Competent National Authorities</a></li>
+                    </ul>
+                </div>
+                <ul class="nav nav-searchfilters flex-column" >
+                    <li class="nav-item">
+                    <li class="nav-item">{% include /search-filters/recordtypes.html %}</li>
+                </ul>
+            </div>
+
+        </div>
+    </div> 
+
+
+    <!-- HEADER ROW -->
+     <div class="row ">
+        <div class="col-lg-3 mb20 center-block">
+        <span class="text-muted small font-weight-light text-uppercase">Y-AXIS:</span>  
+           <div class="dropdown" style="display: inline;position: relative;top:-3px;">
+               <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Select y-axis
+                   <span class="caret"></span>
+               </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li><a href="about">Record types</a></li>
+                   <li role="separator" class="divider"></li>
+                   <li><a href="about-cna">Competent National Authorities</a></li>
+               </ul>
+           </div> 
+           <ul class="nav nav-searchfilters flex-column">
+               <li class="nav-item">
+               <li class="nav-item">{% include /search-filters/country.html %}</li>
+             </ul>
+        
+        </div>
+        <div class="col-lg-9 hidden-xs hidden-sm">
+            <table class="table table-countries table-countries-header">
+                <tbody>
+                <tr>
+                    <th><span class="visible-xs visible-sm hide">NFP</span><span class="hidden-xs hidden-sm">National Focal Points</span></th>
+                    <th><span class="visible-xs visible-sm hide">CNA</span><span class="hidden-xs hidden-sm">Competent National Authorities</span></th>
+                    <th><span class="visible-xs visible-sm hide">MSR</span><span class="hidden-xs hidden-sm">ABS Measures</span></th>
+                    <th><span class="visible-xs visible-sm hide">PRO</span><span class="hidden-xs hidden-sm">ABS Procedures</span></th>
+                    <th><span class="visible-xs visible-sm hide">NMCC</span><span class="hidden-xs hidden-sm">Model Contractual Clauses</span> </th>
+                    <th><span class="visible-xs visible-sm hide">IRCC</span><span class="hidden-xs hidden-sm">Certificates</span></th>
+                    <th><span class="visible-xs visible-sm hide">NDB</span><span class="hidden-xs hidden-sm">Websites and Databases</span></th>
+                    <th><span class="visible-xs visible-sm hide">CP</span><span class="hidden-xs hidden-sm">Checkpoints</span></th>
+                    <th><span class="visible-xs visible-sm hide">CPC</span><span class="hidden-xs hidden-sm">Communiqués</span></th>
+                    <th><span class="visible-xs visible-sm hide">NR</span><span class="hidden-xs hidden-sm">National Reports</span></th>
+                </tr>
+            </table>
+            </tbody>
+        </div>
+    </div> 
+
+    <hr class="mb10">
+    <div class="row" >
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-9">
+            
+        </div>
+    </div> 
+
+    
+    <!-- COUNTRY ROW -->
+    <div class="row" >
+        <div class="col-lg-3">
+            <table class="table table-countries">
+                <tbody>
+                <tr>
+                    <td class="table-country-num">1.</td>
+                    <td class="table-country-name">
+                        <a href="/country-profile"><h4>United Kingdom of Great Britain and Northern Ireland</h4></a></td>
+              </tr>
+              </tbody>
+            </table>  
+        </div>
+        <div class="col-lg-9">
+            <table class="table  table-countries table-countries-data">
+                <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+             </tbody>
+            </table>
+            
+        </div>
+    </div> 
+     <!-- COUNTRY ROW -->
+    <hr class="mb10">
+    <div class="row mb10">
+        <div class="col-lg-3">
+            <table class="table  table-countries">
+                <tbody>
+                <tr>
+                    <td class="table-country-num">2.</td>
+                    <td class="table-country-name"><h4>Canada</h4></td>
+              </tr>
+              </tbody>
+            </table>  
+        </div>
+        <div class="col-lg-9">
+            <table class="table  table-countries table-countries-data">
+                <tbody>
+                    <tr>
+                        <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                        <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                        <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                        <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                        <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                        <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                        <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                        <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                        <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                        <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                    </tr>
+             </tbody>
+            </table>
+            
+        </div>
+    </div> 
+
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+
+<!-- COUNTRY ROW -->
+<hr class="mb10">
+<div class="row mb10">
+    <div class="col-lg-3">
+        <table class="table  table-countries">
+            <tbody>
+            <tr>
+                <td class="table-country-num">2.</td>
+                <td class="table-country-name"><h4>Canada</h4></td>
+          </tr>
+          </tbody>
+        </table>  
+    </div>
+    <div class="col-lg-9">
+        <table class="table  table-countries table-countries-data">
+            <tbody>
+                <tr>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                    <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                    <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                    <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                    <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                    <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                    <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                </tr>
+         </tbody>
+        </table>
+        
+    </div>
+</div> 
+
+     <!-- TOTAL ROW -->
+    <hr class="mb10">
+    <div class=" bg-grey">
+        <div class="row" style="padding:10px 0;">
+            <div class="col-lg-3">
+                <table class="table  table-countries">
+                    <tbody>
+                        <tr>
+                            <td class="table-country-name"><h3 style="padding:0;margin:0;">TOTAL</h3></td>
+                        </tr>
+                    </tbody>
+                </table>  
+            </div>
+            <div class="col-lg-9">
+                <table class="table  table-countries table-countries-data">
+                    <tbody>
+                        <tr>
+                            <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NBD</div></td>
+                            <td class="table-country-count">3  <div class="text-muted small color-grey font-weight-light text-uppercase">CNA</div></td>
+                            <td class="table-country-count">4  <div class="text-muted small color-grey font-weight-light text-uppercase">MSR</div></td>
+                            <td class="table-country-count">15 <div class="text-muted small color-grey font-weight-light text-uppercase">PRO</div></td>
+                            <td class="table-country-count">5  <div class="text-muted small color-grey font-weight-light text-uppercase">NMCC</div></td>
+                            <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">NDB</div></td>
+                            <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">IRCC</div></td>
+                            <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CP</div></td>
+                            <td class="table-country-count">0  <div class="text-muted small color-grey font-weight-light text-uppercase">CPC</div></td>
+                            <td class="table-country-count">1  <div class="text-muted small color-grey font-weight-light text-uppercase">NR</div></td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+</div>

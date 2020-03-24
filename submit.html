@@ -1,0 +1,70 @@
+---
+layout: page
+title: sign-in
+---
+<div class="container-full content-full-1 mb20">
+    <div class="container">
+        <div class="jumbotron bg-white">
+            <h1>Submit</h1>
+            <h2>Please <span class="color-highlight">sign-in</span> to publish information on the ABS
+                Clearing-House.</h2>
+
+            <div class="row mb10">
+                <div class="col-md-4">
+                    <div class="input-group input-group-lg mb5" style="width:100%">
+                        <input type="text" class="form-control" placeholder="email">
+                    </div><!-- /input-group -->
+                </div><!-- /.col-->
+                <div class="col-md-4">
+                    <div class="input-group input-group-lg mb5" style="width:100%">
+                        <input type="text" class="form-control" placeholder="password">
+
+                    </div><!-- /input-group -->
+                </div><!-- /.col-->
+
+                <div class="col-md-4">
+                    <div class="input-group input-group-lg mb5">
+                        <button class="btn btn-primary btn-lg " type="button">
+                            Sign-in
+                        </button>
+                    </div><!-- /input-group -->
+                </div><!-- /.col -->
+
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    Don't have an account? <a>Click here to register.</a> &nbsp; | &nbsp; <a class="text-muted">Forgot your password?</a>
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-lg-4">
+            <div class="mb30">
+                <h3> Frequently asked questions </h3>
+                <h4><a>Who can submit information?</a></h4>
+                <h4><a>How do I submit information?</a></h4> 
+                <h4><a>How do I sign-up for an account?</a></h4>  
+                <h4><a>I forgot my password. Help!</a></h4> 
+                <h4><a>Getting started for governments</a></h4>  
+                <h4><a>Getting started for other stakeholders</a></h4>
+                <a href="about-faqs"><span class="small text-uppercase color-highlight"> Mores FAQs</span></a>
+            </div>
+        </div>
+        <div class="col-sm-9 col-lg-8">
+            <hr class="hide visible-xs mb20">
+            <div>
+                <div ng-bind-html="article.content | lstring:locale | toTrusted" class="ng-binding">
+                    <h1> Who can submit information? </h1>
+                    <hr>
+                    <h2 class="color-highlight"> The ABS Clearing-House is for everyone. </h2>
+                   
+                    <h2>Governments: Parties and Non-Parties</h2><p>By publishing national information on the ABS Clearing-House, Parties to the Nagoya Protocol and other governments, help both users and providers of genetic resources and associated traditional knowledge. Users can find the information they need to access genetic resources and associated traditional knowledge, while providers will find tools to monitor the utilization of these resources. Parties have an obligation to use the ABS Clearing-House to share certain information of particular importance to the implementation of the Protocol. Non-Parties to the Protocol are also encouraged to participate and use the ABS Clearing-House to share the same information required by Parties.</p><h2>Indigenous peoples and local communities (IPLCs)</h2><p>IPLCs can use the ABS Clearing-House to share information on how to access traditional knowledge associated with genetic resources, such as community protocols and procedures and customary laws. They can also access and contribute to the ABS Clearing-House with awareness-raising and capacity-building materials on ABS in their own indigenous languages.</p><h2>Private sector and research institutions</h2><p>Private sector and research institutions utilizing or seeking access to genetic resources can also benefit from the ABS Clearing-House by finding reliable and up-to-date information on how to access genetic resources and associated traditional knowledge. They can also use the ABS Clearing-House to share information on the model contractual clauses, codes of conduct, guidelines and best practices that they have developed.</p><h2>Organizations involved in capacity-building for the Nagoya Protocol</h2><p>Organizations involved in capacity-building for the Nagoya Protocol can share capacity-building resources and materials and information on their projects or activities, including lessons learned from their implementation. In exchange, they are able to access information on projects or resources registered by other actors, and therefore, create opportunities for capitalizing best practices and developing coordinated approaches to building and developing capacity.</p><h2>International and non-governmental organizations and others</h2><p>International and non-governmental organizations and others can raise awareness and promote capacity building on ABS through the ABS Clearing-House. The ABS Clearing-House offers a space to share materials, general literature and learning material related to ABS and the Nagoya Protocol. These resources can contribute to promote ratification and implementation of the Nagoya Protocol, as well as increase opportunities for collaboration among the ABS community.</p></div>
+            </div>
+            
+        </div>
+    </div>
+</div>

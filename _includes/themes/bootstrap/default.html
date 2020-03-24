@@ -16,19 +16,23 @@
 
   <body>
     {% include cbd-nav.html %}
-    {% include absch-nav.html %}
+    {% include chm-nav.html %}
+  
 
     <div class="chm-content">
       {{ content }}
     </div> 
 
-    <footer>
-        {% include footer.html %}
+    <footer class="bg-footer">
+      {% include footer.html %}
     </footer>
 
+    <!-- <footer class="bg-footer-bch">
+      {% include footer.html %}
+    </footer>
+       -->
 
-    
-   
+
     <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
 

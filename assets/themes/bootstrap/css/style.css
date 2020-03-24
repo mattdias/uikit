@@ -2,11 +2,7 @@
 
 /* Custom container *//* bootstrap 3 changes */
 .btn {background-image: none;}
-.jumbotron-page-top{
-    margin-bottom:0;
-}
 .panel-heading, .well{background-color: #f7f7f7!important; background-image: none!important;}
-
 
 /* bootstap 4 */
 .text-muted {color: #6c757d!important;}
@@ -24,6 +20,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", sans-serif !important;
 }
+p {text-align: justify;}
+
+a{cursor: pointer!important;}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);}
+
+
+
+
 .navbar-cbd {margin-bottom: 0;}
 .navbar-cbd img {height: 18px;}
 .navbar-cbd  {min-height: 30px; padding-top:3px;}
@@ -65,9 +76,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.navbar-breadcrumbs {position:relative; top:1px;min-height: 0;margin: 0;border-bottom: 1px solid #f2f2f2; }
-.navbar-breadcrumbs a {font-size: 12px;}
-.navbar-breadcrumbs .breadcrumb{background: #FFF; padding: 0; margin: 0;}
+.navbar-breadcrumbs {position:relative; top:1px;min-height: 0;margin: 0;}
+.navbar-breadcrumbs a {font-size: 13px;}
+.navbar-breadcrumbs .breadcrumb{background-color: transparent; padding: 0; margin: 0;}
 
 
 
@@ -104,11 +115,13 @@ footer li > a {font-size: 14px;}
 .nav-searchfilters .btn-search { height: 44px; background-color: #f2f2f2;}
 .popover-content .nav-pills > li > a {color:#333}
 .popover-content .nav-pills > li.active > a {color:#FFF; font-weight: bold;}
+.mb5 {margin-bottom: 5px;}
 .mb10 {margin-bottom: 15px;}
 .mb20 {margin-bottom: 20px;}
 .mb30 {margin-bottom: 30px;}
 .mb50 {margin-bottom: 50px;}
 .p10 {padding: 10px;}
+.p20 {padding: 20px;}
 
 .m10 {margin: 10px;}
 .round-corners {border-radius: 4px;}
@@ -135,25 +148,41 @@ hr {margin:0;}
 }
 
 .freq-search {min-height: 220px;}
+.table-countries {padding:0;margin:0;}
+.table-countries-header {padding:0;margin:0;margin-bottom:10px;}
+.table-countries-data {padding:0;margin:0;}
+.table-countries    > tbody > tr > th {vertical-align: top!important;border:0;}
+.table-countries    > tbody > tr > td {vertical-align: middle!important;border:0; }
+.table-countries-header > tbody > tr > th {vertical-align: top!important;text-align:center;border:0; border-left:1px solid #DDD;width:10%!important;font-size: 14px;}
+.table-countries-data   > tbody > tr > td {vertical-align: middle!important;text-align:center;border:0; border-left:1px solid #DDD;width:10%!important;height:100%;}
+.table-countries-data {height:60px;}
+.table-country-num{width:30px;vertical-align: middle;}
+.table-country-name{width:300px;vertical-align: middle;}
+.table-country-count{vertical-align: middle;}
 
-
-a{cursor: pointer!important;}
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;}
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);}
-
-.color-national {
-    color: #428bca!important;
-}
-.color-reference {
-    color: #fa6938!important;
-}
+.color-national {color: #428bca!important;}
+.color-reference {color: #fa6938!important;}
 .bg-white{background-color: #fff!important;}
 .bg-grey{background-color: #f7f7f7!important;}
+.bg-dark{background-color: #333!important}
+/* .bg-highlight{background-color: #FA7268!important;} */
+.bg-highlight{background-color: #C76C5D!important;}
+.bg-absch{background-color: #069554!important; }
+
+.bg-national{background-color: #428bca!important;}
+.bg-reference{background-color: #fa6938!important;c}
+/* .bg-breadcrumbs {background-color: #49B182; border-bottom: 1px solid #DDD;} */
+.navbar-breadcrumbs a {color:#fff!important}
+.bg-breadcrumbs {background-color: #49B182; border-bottom: 1px solid #ddd;}
+.bg-breadcrumbs-bch {background-color: #428bca; border-bottom: 1px solid #ddd;}
+
+.bg-footer {background-color: #49B182;}
+.bg-footer-bch {background-color: #428bca;}
+
+footer a{color:#FFF;}
 .border-grey{border: solid 2px #EEE!important;}
 .color-black{color: #111!important;}
+.color-white * {color: #fff!important;}
+.color-highlight{color: #FA7268!important;}
+.bold{font-weight: 600!important; }
+
